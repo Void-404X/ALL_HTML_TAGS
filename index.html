@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tag-section {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .section-title {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+        }
+
+        .tag-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .tag-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tag-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .tag-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .tag-description {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .tag-example {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .tag-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>HTML Tags Reference</h1>
+        <p>A comprehensive guide to all HTML tags and their meanings</p>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Document Structure Tags -->
+    <div class="tag-section">
+        <div class="section-title">Document Structure Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;!DOCTYPE&gt;</div>
+                <div class="tag-description">Defines the document type and HTML version.</div>
+                <div class="tag-example">&lt;!DOCTYPE html&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;html&gt;</div>
+                <div class="tag-description">The root element of an HTML page.</div>
+                <div class="tag-example">&lt;html lang="en"&gt;...&lt;/html&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;head&gt;</div>
+                <div class="tag-description">Contains meta-information about the document.</div>
+                <div class="tag-example">&lt;head&gt;...&lt;/head&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;title&gt;</div>
+                <div class="tag-description">Specifies the title of the document (shown in browser tab).</div>
+                <div class="tag-example">&lt;title&gt;My Page&lt;/title&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;body&gt;</div>
+                <div class="tag-description">Contains the visible page content.</div>
+                <div class="tag-example">&lt;body&gt;...&lt;/body&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Text Content Tags -->
+    <div class="tag-section">
+        <div class="section-title">Text Content Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;h1&gt; to &lt;h6&gt;</div>
+                <div class="tag-description">Heading elements from most important (h1) to least important (h6).</div>
+                <div class="tag-example">&lt;h1&gt;Main Heading&lt;/h1&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;p&gt;</div>
+                <div class="tag-description">Defines a paragraph.</div>
+                <div class="tag-example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;div&gt;</div>
+                <div class="tag-description">A generic container for flow content.</div>
+                <div class="tag-example">&lt;div&gt;Content here&lt;/div&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;span&gt;</div>
+                <div class="tag-description">A generic inline container for phrasing content.</div>
+                <div class="tag-example">&lt;span&gt;inline content&lt;/span&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;br&gt;</div>
+                <div class="tag-description">Inserts a single line break.</div>
+                <div class="tag-example">Line one&lt;br&gt;Line two</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;hr&gt;</div>
+                <div class="tag-description">Represents a thematic break between paragraph-level elements.</div>
+                <div class="tag-example">&lt;p&gt;First section&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Second section&lt;/p&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Text Formatting Tags -->
+    <div class="tag-section">
+        <div class="section-title">Text Formatting Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;strong&gt;</div>
+                <div class="tag-description">Indicates strong importance (typically displayed as bold).</div>
+                <div class="tag-example">&lt;strong&gt;Important!&lt;/strong&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;em&gt;</div>
+                <div class="tag-description">Indicates emphasis (typically displayed as italic).</div>
+                <div class="tag-example">&lt;em&gt;Emphasized text&lt;/em&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;b&gt;</div>
+                <div class="tag-description">Bold text without extra importance.</div>
+                <div class="tag-example">&lt;b&gt;Bold text&lt;/b&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;i&gt;</div>
+                <div class="tag-description">Italic text without extra emphasis.</div>
+                <div class="tag-example">&lt;i&gt;Italic text&lt;/i&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;u&gt;</div>
+                <div class="tag-description">Underlined text.</div>
+                <div class="tag-example">&lt;u&gt;Underlined text&lt;/u&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;mark&gt;</div>
+                <div class="tag-description">Highlighted or marked text.</div>
+                <div class="tag-example">&lt;mark&gt;Highlighted text&lt;/mark&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;small&gt;</div>
+                <div class="tag-description">Smaller text (typically one size smaller).</div>
+                <div class="tag-example">&lt;small&gt;Small text&lt;/small&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;sub&gt;</div>
+                <div class="tag-description">Subscript text.</div>
+                <div class="tag-example">H&lt;sub&gt;2&lt;/sub&gt;O</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;sup&gt;</div>
+                <div class="tag-description">Superscript text.</div>
+                <div class="tag-example">E=mc&lt;sup&gt;2&lt;/sup&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- List Tags -->
+    <div class="tag-section">
+        <div class="section-title">List Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;ul&gt;</div>
+                <div class="tag-description">Defines an unordered (bulleted) list.</div>
+                <div class="tag-example">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;ol&gt;</div>
+                <div class="tag-description">Defines an ordered (numbered) list.</div>
+                <div class="tag-example">&lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;li&gt;</div>
+                <div class="tag-description">Defines a list item.</div>
+                <div class="tag-example">&lt;li&gt;List item&lt;/li&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;dl&gt;</div>
+                <div class="tag-description">Defines a description list.</div>
+                <div class="tag-example">&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Definition&lt;/dd&gt;&lt;/dl&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;dt&gt;</div>
+                <div class="tag-description">Defines a term in a description list.</div>
+                <div class="tag-example">&lt;dt&gt;HTML&lt;/dt&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;dd&gt;</div>
+                <div class="tag-description">Defines a description in a description list.</div>
+                <div class="tag-example">&lt;dd&gt;HyperText Markup Language&lt;/dd&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link and Media Tags -->
+    <div class="tag-section">
+        <div class="section-title">Link and Media Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;a&gt;</div>
+                <div class="tag-description">Defines a hyperlink.</div>
+                <div class="tag-example">&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;img&gt;</div>
+                <div class="tag-description">Embeds an image.</div>
+                <div class="tag-example">&lt;img src="image.jpg" alt="Description"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;audio&gt;</div>
+                <div class="tag-description">Embeds sound content.</div>
+                <div class="tag-example">&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;video&gt;</div>
+                <div class="tag-description">Embeds video content.</div>
+                <div class="tag-example">&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;iframe&gt;</div>
+                <div class="tag-description">Embeds another HTML page.</div>
+                <div class="tag-example">&lt;iframe src="page.html"&gt;&lt;/iframe&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Tags -->
+    <div class="tag-section">
+        <div class="section-title">Table Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;table&gt;</div>
+                <div class="tag-description">Defines a table.</div>
+                <div class="tag-example">&lt;table&gt;...&lt;/table&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;tr&gt;</div>
+                <div class="tag-description">Defines a table row.</div>
+                <div class="tag-example">&lt;tr&gt;...&lt;/tr&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;th&gt;</div>
+                <div class="tag-description">Defines a table header cell.</div>
+                <div class="tag-example">&lt;th&gt;Header&lt;/th&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;td&gt;</div>
+                <div class="tag-description">Defines a table data cell.</div>
+                <div class="tag-example">&lt;td&gt;Data&lt;/td&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;thead&gt;</div>
+                <div class="tag-description">Groups header content in a table.</div>
+                <div class="tag-example">&lt;thead&gt;...&lt;/thead&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;tbody&gt;</div>
+                <div class="tag-description">Groups body content in a table.</div>
+                <div class="tag-example">&lt;tbody&gt;...&lt;/tbody&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;tfoot&gt;</div>
+                <div class="tag-description">Groups footer content in a table.</div>
+                <div class="tag-example">&lt;tfoot&gt;...&lt;/tfoot&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;caption&gt;</div>
+                <div class="tag-description">Defines a table caption.</div>
+                <div class="tag-example">&lt;caption&gt;Monthly Sales&lt;/caption&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Tags -->
+    <div class="tag-section">
+        <div class="section-title">Form Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;form&gt;</div>
+                <div class="tag-description">Defines an HTML form for user input.</div>
+                <div class="tag-example">&lt;form action="/submit" method="post"&gt;...&lt;/form&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;input&gt;</div>
+                <div class="tag-description">Defines an input control.</div>
+                <div class="tag-example">&lt;input type="text" name="username"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;textarea&gt;</div>
+                <div class="tag-description">Defines a multi-line text input control.</div>
+                <div class="tag-example">&lt;textarea rows="4"&gt;&lt;/textarea&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;button&gt;</div>
+                <div class="tag-description">Defines a clickable button.</div>
+                <div class="tag-example">&lt;button type="submit"&gt;Submit&lt;/button&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;select&gt;</div>
+                <div class="tag-description">Defines a drop-down list.</div>
+                <div class="tag-example">&lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;option&gt;</div>
+                <div class="tag-description">Defines an option in a drop-down list.</div>
+                <div class="tag-example">&lt;option value="1"&gt;First&lt;/option&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;optgroup&gt;</div>
+                <div class="tag-description">Groups related options in a drop-down list.</div>
+                <div class="tag-example">&lt;optgroup label="Group"&gt;...&lt;/optgroup&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;label&gt;</div>
+                <div class="tag-description">Defines a label for an input element.</div>
+                <div class="tag-example">&lt;label for="name"&gt;Name:&lt;/label&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;fieldset&gt;</div>
+                <div class="tag-description">Groups related elements in a form.</div>
+                <div class="tag-example">&lt;fieldset&gt;...&lt;/fieldset&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;legend&gt;</div>
+                <div class="tag-description">Defines a caption for a fieldset.</div>
+                <div class="tag-example">&lt;legend&gt;Personal Info&lt;/legend&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Semantic Tags -->
+    <div class="tag-section">
+        <div class="section-title">Semantic Tags (HTML5)</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;header&gt;</div>
+                <div class="tag-description">Represents introductory content or navigational aids.</div>
+                <div class="tag-example">&lt;header&gt;...&lt;/header&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;footer&gt;</div>
+                <div class="tag-description">Represents the footer of a document or section.</div>
+                <div class="tag-example">&lt;footer&gt;...&lt;/footer&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;nav&gt;</div>
+                <div class="tag-description">Defines navigation links.</div>
+                <div class="tag-example">&lt;nav&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/nav&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;main&gt;</div>
+                <div class="tag-description">Specifies the main content of a document.</div>
+                <div class="tag-example">&lt;main&gt;...&lt;/main&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;article&gt;</div>
+                <div class="tag-description">Defines independent, self-contained content.</div>
+                <div class="tag-example">&lt;article&gt;...&lt;/article&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;section&gt;</div>
+                <div class="tag-description">Defines a section in a document.</div>
+                <div class="tag-example">&lt;section&gt;...&lt;/section&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;aside&gt;</div>
+                <div class="tag-description">Defines content aside from the content it is placed in.</div>
+                <div class="tag-example">&lt;aside&gt;...&lt;/aside&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;figure&gt;</div>
+                <div class="tag-description">Specifies self-contained content like illustrations.</div>
+                <div class="tag-example">&lt;figure&gt;&lt;img src="img.jpg"&gt;&lt;/figure&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;figcaption&gt;</div>
+                <div class="tag-description">Defines a caption for a figure element.</div>
+                <div class="tag-example">&lt;figcaption&gt;Caption&lt;/figcaption&gt;</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meta Tags -->
+    <div class="tag-section">
+        <div class="section-title">Meta Tags</div>
+        <div class="tag-grid">
+            <div class="tag-card">
+                <div class="tag-name">&lt;meta&gt;</div>
+                <div class="tag-description">Provides metadata about the HTML document.</div>
+                <div class="tag-example">&lt;meta charset="UTF-8"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;link&gt;</div>
+                <div class="tag-description">Defines the relationship between a document and an external resource.</div>
+                <div class="tag-example">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;style&gt;</div>
+                <div class="tag-description">Defines style information for a document.</div>
+                <div class="tag-example">&lt;style&gt;body { color: red; }&lt;/style&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;script&gt;</div>
+                <div class="tag-description">Defines a client-side script.</div>
+                <div class="tag-example">&lt;script src="script.js"&gt;&lt;/script&gt;</div>
+            </div>
+
+            <div class="tag-card">
+                <div class="tag-name">&lt;noscript&gt;</div>
+                <div class="tag-description">Defines an alternate content for users without script support.</div>
+                <div class="tag-example">&lt;noscript&gt;Please enable JavaScript&lt;/noscript&gt;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>HTML Tags Reference &copy; 2023 | All standard HTML tags included</p>
+    </div>
+</footer>
+</body>
+</html>
