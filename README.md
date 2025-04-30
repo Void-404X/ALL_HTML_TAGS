@@ -1,6 +1,6 @@
 # 🌐 ALL_HTML_TAGS - The Complete HTML Reference
 
-![HTML5 Logo](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)
+![HTML5 Logo](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg =59x50)
 
 A comprehensive collection of all HTML tags with examples and usage guidelines.
 
@@ -27,8 +27,3 @@ A comprehensive collection of all HTML tags with examples and usage guidelines.
 ```plaintext
 ALL_HTML_TAGS/
 ├── index.html        # Main page
-├── css/
-│   └── style.css     # Styling for the project
-├── js/
-│   └── script.js     # Interactive functionality
-└── examples/         # Example files for each tag
