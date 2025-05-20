@@ -28,5 +28,3 @@ A comprehensive collection of all HTML tags with examples and usage guidelines.
 ```plaintext
 ALL_HTML_TAGS/
 ├── index.html        # Main page
-
-
