@@ -18,7 +18,6 @@ A comprehensive collection of all HTML tags with examples and usage guidelines.
 
 ## 🛠️ How to Use
 
-
 1. Visit the [live demo](https://void-404x.github.io/ALL_HTML_TAGS/)
 2. Browse tags by category or use the search
 3. Click any tag to see detailed information and examples
